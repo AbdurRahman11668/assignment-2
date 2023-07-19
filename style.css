@@ -31,7 +31,7 @@ button {
   background: #ff42a5;
   border: none;
   text-transform: uppercase;
-cursor: pointer;
+  cursor: pointer;
 }
 
 /* Header styles */
@@ -90,7 +90,7 @@ cursor: pointer;
   font-size: 18px;
   font-weight: 500;
 }
-.fa-youtube {
+.follow-us .fa-youtube {
   width: 35px;
   color: #f61c0d;
   margin-left: 15px;
@@ -205,104 +205,194 @@ cursor: pointer;
 }
 
 /* Funny Videos Styles */
-.funny-videos{
-    margin-bottom: 100px;
+.funny-videos {
+  margin-bottom: 100px;
 }
-.funny-videos-content{
-    text-align: center;
+.funny-videos-content {
+  text-align: center;
 }
-.funny-videos-content h3{
-    padding-bottom: 10px;
+.funny-videos-content h3 {
+  padding-bottom: 10px;
 }
-.funny-videos-content h3 span{
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.funny-videos-content h3 span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.videos-card{
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    padding: 0 30px;
+.videos-card {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 0 30px;
 }
-.card{
-    cursor: pointer;
+.card {
+  cursor: pointer;
 }
-.card img{
-    width: 250px;
+.card img {
+  width: 250px;
 }
-.hide{
-    position: relative;
+.hide {
+  position: relative;
 }
-.card-2{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+.card-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
-.hide:hover .card-1{
-    visibility: hidden;
-    background-color: #000;
-    z-index: 1;
-
+.hide:hover .card-1 {
+  visibility: hidden;
+  background-color: #000;
+  z-index: 1;
 }
-.card p{
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: 500;
+.card p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 /* Play Online Games Styles */
-.play-online{
-    display: flex;
-    margin-bottom: 150px;
+.play-online {
+  display: flex;
+  margin-bottom: 150px;
 }
-.play-online-img{
-    position: relative;
-    width: 500px;
+.play-online-img {
+  position: relative;
+  width: 500px;
 }
-.play-img-1{
-    width: 500px;
+.play-img-1 {
+  width: 500px;
 }
-.play-img-2{
-    position: absolute;
-    width: 200px;
-    right: -80px;
-    bottom: -80px;
+.play-img-2 {
+  position: absolute;
+  width: 200px;
+  right: -80px;
+  bottom: -80px;
 }
-.play-online-content{
-    width: 50%;
-    margin: auto;
+.play-online-content {
+  width: 50%;
+  margin: auto;
 }
-.play-online-content h3{
-    width: 420px;
-    padding-left: 100px;
+.play-online-content h3 {
+  width: 420px;
+  padding-left: 100px;
 }
-.play-online-content p{
-    padding-top: 20px;
-    padding-left: 100px;
+.play-online-content p {
+  padding-top: 20px;
+  padding-left: 100px;
 }
-.play-online-content h3 span{
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.play-online-content h3 span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Categories Styles */
-.categories{
-    margin-bottom: 100px;
+.categories {
+  padding: 100px 80px;
+  background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
-.categories-list{
+.categories-content{
     display: flex;
-    text-decoration: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
 }
-.categories-list a
-.categories-list a span{
+.categories-list {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  padding: 5px 20px 5px 10px;
+  border: 2px solid #FFF9FD;
+  border-radius: 50px;
+  background: #fff;
+  width: auto;
+}
+.categories-list:hover {
+  border: 2px solid #ff42a5;
+  border-radius: 50px;
+  color: #ff42a5;
+}
+.categories-list img {
+  width: 40px;
+}
+.categories-list span {
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 10px;
 }
 
+/* Footer Styles */
+.footer {
+  text-align: center;
+  padding: 100px 100px;
+  background: #0b0223;
+}
+.footer-logo {
+  display: flex;
+  justify-content: center;
+}
+.footer-logo img {
+  width: 55px;
+  height: 25px;
+  margin-top: 4px;
+}
+.footer-logo span {
+  color: #ff42a5;
+}
+.footer-logo h3 {
+  color: #fff;
+  margin-left: 20px;
+  font-size: 28px;
+  font-weight: 700;
+}
+.footer-list ul {
+  display: flex;
+  justify-content: center;
+}
+.footer-items {
+  list-style: none;
+  padding: 35px 10px;
+}
+.footer-items a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-icons a {
+  color: #fff;
+  width: 50px;
+  padding: 0 10px;
+}
+.footer-icons a i {
+  font-size: 25px;
+}
+.footer-condition{
+    padding-top: 30px;
+}
+.footer-condition ul{
+    display: flex;
+    justify-content: center;
+}
+.footer-condition ul li{
+    list-style: none;
+    padding: 0 30px;
+}
+.footer-condition ul li a{
+    color: rgba(255, 255, 255, 0.60);
+    text-decoration: none;
+}
+.footer p{
+    padding-top: 20px;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 15px;
+    font-weight: 500;
+}
 
 /* Responsive Styles Starts From Here*/
 
@@ -402,62 +492,99 @@ cursor: pointer;
   }
 
   /* Funny Videos Styles */
-  .funny-videos{
+  .funny-videos {
     padding: 0;
     margin: 0;
     width: 100%;
     text-align: center;
   }
-  .funny-videos-content h3{
+  .funny-videos-content h3 {
     font-size: 25px;
   }
-  .funny-videos-content p{
+  .funny-videos-content p {
     padding: 0 30px;
   }
-  .videos-card{
+  .videos-card {
     display: block;
   }
-  .card{
+  .card {
     margin-bottom: 50px;
-
   }
-  .hide{
+  .hide {
     width: 250px;
     margin: 0 auto;
   }
   /* Play Online Games Styles */
-.play-online{
+  .play-online {
     display: block;
     margin-bottom: 50px;
     text-align: center;
     padding: 0;
-}
-.play-online-img{
+  }
+  .play-online-img {
     width: 300px;
     margin: 0 auto;
-}
-.play-img-1{
+  }
+  .play-img-1 {
     width: 300px;
-}
-.play-img-2{
+  }
+  .play-img-2 {
     width: 150px;
     right: -50px;
     bottom: -70px;
-}
-.play-online-content{
+  }
+  .play-online-content {
     width: 100%;
     margin: 0;
     padding-top: 120px;
-}
-.play-online-content h3{
+  }
+  .play-online-content h3 {
     padding: 0;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 20px;
-}
-.play-online-content p{
+  }
+  .play-online-content p {
     padding-top: 0;
     padding-left: 0;
+  }
+
+  /* Categories Styles */
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 10px;
+    
 }
+.categories-list{
+    width: auto;
+    padding-right: 20px;
+}
+.categories-list img {
+    width: 30px;
+  }
+  .categories-list span {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+
+  /* Footer Styles */
+  .footer{
+    padding: 50px 30px;
+  }
+  .footer-list ul {
+    flex-wrap: wrap;
+    padding: 30px 0;
+  }
+  .footer-list ul li{
+    padding: 10px 20px;
+  }
+  .footer-condition ul{
+    flex-wrap: wrap;
+  }
+  .footer-condition ul li{
+      padding: 5px 20px 15px 20px;
+  }
 
 }
 /* Small devices (portrait tablets and large phones, 426px and up) */
@@ -557,62 +684,97 @@ cursor: pointer;
   }
 
   /* Funny Videos Styles */
-  .funny-videos{
+  .funny-videos {
     padding: 0;
     margin: 0;
     width: 100%;
     text-align: center;
   }
-  .funny-videos-content h3{
+  .funny-videos-content h3 {
     font-size: 25px;
   }
-  .funny-videos-content p{
+  .funny-videos-content p {
     padding: 0 30px;
   }
-  .videos-card{
+  .videos-card {
     display: block;
   }
-  .card{
+  .card {
     margin-bottom: 50px;
-
   }
-  .hide{
+  .hide {
     width: 250px;
     margin: 0 auto;
   }
   /* Play Online Games Styles */
-.play-online{
+  .play-online {
     display: block;
     margin-bottom: 50px;
     text-align: center;
     padding: 0;
-}
-.play-online-img{
+  }
+  .play-online-img {
     width: 300px;
     margin: 0 auto;
-}
-.play-img-1{
+  }
+  .play-img-1 {
     width: 300px;
-}
-.play-img-2{
+  }
+  .play-img-2 {
     width: 150px;
     right: -50px;
     bottom: -70px;
-}
-.play-online-content{
+  }
+  .play-online-content {
     width: 100%;
     margin: 0;
     padding-top: 120px;
-}
-.play-online-content h3{
+  }
+  .play-online-content h3 {
     width: 100%;
     padding: 0 10px;
     font-size: 30px;
     margin-bottom: 20px;
-}
-.play-online-content p{
+  }
+  .play-online-content p {
     padding: 0 25px;
+  }
+  /* Categories Styles */
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 10px;
+    
 }
+.categories-list img {
+    width: 30px;
+  }
+  .categories-list span {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+  .categories-list{
+      width: 150px;
+  }
+
+  /* Footer Styles */
+  .footer{
+    padding: 50px 30px;
+  }
+  .footer-list ul {
+    flex-wrap: wrap;
+    padding: 30px 0;
+  }
+  .footer-list ul li{
+    padding: 10px 20px;
+  }
+  .footer-condition ul{
+    flex-wrap: wrap;
+  }
+  .footer-condition ul li{
+      padding: 5px 20px 15px 20px;
+  }
 }
 /* Small devices (portrait tablets and large phones, 601px and up) */
 @media only screen and (min-width: 601px) and (max-width: 767px) {
@@ -709,59 +871,93 @@ cursor: pointer;
     font-size: 20px;
   }
   /* Funny Videos Styles */
-  .funny-videos{
+  .funny-videos {
     padding: 0;
     margin: 0;
     width: 100%;
     text-align: center;
   }
-  .funny-videos-content h3{
+  .funny-videos-content h3 {
     font-size: 35px;
   }
-  .videos-card{
+  .videos-card {
     display: block;
   }
-  .card{
+  .card {
     margin-bottom: 50px;
-
   }
-  .hide{
+  .hide {
     width: 250px;
     margin: 0 auto;
   }
   /* Play Online Games Styles */
-.play-online{
+  .play-online {
     display: block;
     margin-bottom: 50px;
     text-align: center;
     padding: 0;
-}
-.play-online-img{
+  }
+  .play-online-img {
     width: 400px;
     margin: 0 auto;
-}
-.play-img-1{
+  }
+  .play-img-1 {
     width: 400px;
-}
-.play-img-2{
+  }
+  .play-img-2 {
     width: 200px;
     right: -80px;
     bottom: -80px;
-}
-.play-online-content{
+  }
+  .play-online-content {
     width: 100%;
     margin: 0;
     padding-top: 120px;
-}
-.play-online-content h3{
+  }
+  .play-online-content h3 {
     width: 100%;
     padding: 0;
     font-size: 30px;
     margin-bottom: 20px;
-}
-.play-online-content p{
+  }
+  .play-online-content p {
     padding: 0 25px;
+  }
+  /* Categories Styles */
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
 }
+.categories-list img {
+    width: 30px;
+  }
+  .categories-list span {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+  .categories-list{
+      width: auto;
+  }
+
+  /* Footer Styles */
+  .footer{
+    padding: 50px 30px;
+  }
+  .footer-list ul {
+    flex-wrap: wrap;
+    padding: 30px 0;
+  }
+  .footer-list ul li{
+    padding: 10px 20px;
+  }
+  .footer-condition ul{
+    flex-wrap: wrap;
+  }
+  .footer-condition ul li{
+      padding: 5px 20px 15px 20px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -821,62 +1017,156 @@ cursor: pointer;
     font-size: 20px;
   }
   /* Funny Videos Styles */
-  .funny-videos{
+  .funny-videos {
     padding: 0;
     margin: 0;
     width: 100%;
     text-align: center;
   }
-  .funny-videos-content h3{
+  .funny-videos-content h3 {
     font-size: 40px;
   }
-  .videos-card{
+  .videos-card {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
-  .card{
+  .card {
     margin-bottom: 50px;
   }
-  .hide{
+  .hide {
     width: 250px;
     margin: 0 auto;
   }
 
   /* Play Online Games Styles */
-.play-online{
+  .play-online {
     display: block;
     margin-bottom: 50px;
     text-align: center;
     padding: 0;
-}
-.play-online-img{
+  }
+  .play-online-img {
     width: 400px;
     margin: 0 auto;
-}
-.play-img-1{
+  }
+  .play-img-1 {
     width: 400px;
-}
-.play-img-2{
+  }
+  .play-img-2 {
     width: 200px;
     right: -80px;
     bottom: -80px;
-}
-.play-online-content{
+  }
+  .play-online-content {
     width: 100%;
     margin: 0;
     padding-top: 120px;
-}
-.play-online-content h3{
+  }
+  .play-online-content h3 {
     width: 100%;
     padding: 0;
     font-size: 30px;
     margin-bottom: 20px;
-}
-.play-online-content p{
+  }
+  .play-online-content p {
     padding: 0 25px;
+  }
+  /* Categories Styles */
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
 }
+.categories-list img {
+    width: 40px;
+  }
+  .categories-list span {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+  .categories-list{
+      width: auto;
+      padding-right: 20px;
+  }
+
+  /* Footer Styles */
+  .footer{
+    padding: 50px 30px;
+  }
+  .footer-list ul {
+    flex-wrap: wrap;
+    padding: 30px 0;
+  }
+  .footer-list ul li{
+    padding: 10px 20px;
+  }
+  .footer-condition ul{
+    flex-wrap: wrap;
+  }
+  .footer-condition ul li{
+      padding: 5px 20px 15px 20px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Funny Videos Styles */
+    .funny-videos {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      text-align: center;
+    }
+    .funny-videos-content h3 {
+      font-size: 40px;
+    }
+    .videos-card {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .card {
+      margin-bottom: 50px;
+    }
+    
+.card img {
+    width: 300px;
+  }
+    .hide {
+      width: 300px;
+      margin: 0 auto;
+    }
+    /* Play Online Games Styles */
+  .play-online {
+    display: block;
+    margin-bottom: 50px;
+    text-align: center;
+    padding:20px 50px;
+  }
+  .play-online-img {
+    width: 400px;
+    margin: 0 auto;
+  }
+  .play-img-1 {
+    width: 400px;
+  }
+  .play-img-2 {
+    width: 200px;
+    right: -80px;
+    bottom: -80px;
+  }
+  .play-online-content {
+    width: 100%;
+    margin: 0;
+    padding-top: 120px;
+  }
+  .play-online-content h3 {
+    width: 100%;
+    padding: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .play-online-content p {
+    padding: 0 25px;
+  }
 }
